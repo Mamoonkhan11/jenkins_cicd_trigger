@@ -9,7 +9,7 @@ pipeline {
 	stage('Command Execution') {
 	    steps {
 	        sh 'ls -ld'
-		sh 'm > text.txt'
+		sh 'w > text.txt'
 		sh 'fdisk -h'
 		sh 'echo "All Commands Executed Successfully!"'
 	    }
