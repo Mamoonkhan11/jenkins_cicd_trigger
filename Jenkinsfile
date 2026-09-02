@@ -10,7 +10,8 @@ pipeline {
 	    steps {
 	        sh 'ls -ld'
 		sh 'w > text.txt'
-		sh 'fdisk -h'
+		sh 'fdisk -l > text.txt'
+		sh 'df -h > text.txt'
 		sh 'echo "All Commands Executed Successfully!"'
 	    }
         }
